@@ -4,10 +4,12 @@ import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
+ @Table( name="DesignacaoTeocratica" ) 
 public class DesignacaoTeocratica  implements Serializable {
 
-    @Id
-    @GeneratedValue( strategy = GenerationType.SEQUENCE, generator = "seq_publicadorReino" )
+	private static final long serialVersionUID = 1L;
+	@Id
+   @GeneratedValue( strategy = GenerationType.AUTO)
     private Long idDesignacaoTeocratica;
     private String pioneiro;
     private String anciao;
