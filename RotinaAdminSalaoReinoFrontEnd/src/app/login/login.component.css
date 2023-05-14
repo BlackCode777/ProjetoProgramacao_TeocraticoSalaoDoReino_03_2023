@@ -1,0 +1,10 @@
+@import "bootstrap/dist/css/bootstrap.css";
+
+.card{
+        width: 40%;
+}
+.card-login{
+        display: flex;
+        justify-content: center;
+        padding-top: 10%;
+}
