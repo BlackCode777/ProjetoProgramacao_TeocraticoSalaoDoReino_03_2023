@@ -8,3 +8,9 @@
         justify-content: center;
         padding-top: 10%;
 }
+
+h3, h5, p, button, .button-login {
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+}
