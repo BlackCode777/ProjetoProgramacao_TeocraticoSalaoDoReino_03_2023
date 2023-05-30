@@ -1,2 +1,18 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
+.navbar{
+        position:static;
+        padding: 2em;
+}
+.nav-link{
+        color: aliceblue;
+        font-size: large;
+}
+#name-app-JW-ServiceMaster{
+        color: rgb(255, 255, 255);
+        font-size: xx-large;
+}
+.navbar-nav{
+        
+        margin-left: 15%;
+}

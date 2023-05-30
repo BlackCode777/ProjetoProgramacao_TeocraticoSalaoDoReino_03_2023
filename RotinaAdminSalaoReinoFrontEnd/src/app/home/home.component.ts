@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
+
+        icon: any
+
+        constructor( private router: Router, private routerList: Router ){}
+
+        entraNoCadastroDeUsuarios(){
+                this.router.navigate(['/usuarios'])
+        }
+
+        entraNaListagemDeUsuarios(){
+                this.routerList.navigate(['/usuariosList'])
+        }
 
 }

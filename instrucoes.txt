@@ -1,11 +1,15 @@
 
 install:
+        ng add @fortawesome/angular-fontawesome@0.12
         ng add @ng-bootstrap/ng-bootstrap
         ng add mdb-angular-ui-kit
         npm i bootstrap-dropdown-button
         npm i bootstrap@5.3.0-alpha3
 
 creating apps:
+
+        ng generate module icons
+
         ng generate module home --route home --module app.module
         ng generate module login --route login --module app.module
 
