@@ -10,22 +10,22 @@ const routes: Routes = [
         { 
                 path: 'login', 
                 loadChildren: () => import('./login/login.module').then(m => m.LoginModule), 
-                component: LoginComponent 
+                // component: LoginComponent 
         }, 
         { 
                 path: 'home', 
                 loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-                component: HomeComponent,               
+                // component: HomeComponent,               
         },
         { 
                 path: 'usuarios', 
                 loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule),
-                component: UsuariosComponent 
+                // component: UsuariosComponent 
         },
         { 
                 path: 'usuariosList', 
                 loadChildren: () => import('./usuarios-list/usuarios-list.module').then(m => m.UsuariosListModule),
-                component:  UsuariosListComponent
+                // component:  UsuariosListComponent
         }
         
         // { path:'', redirectTo:'login', pathMatch:'full'  },

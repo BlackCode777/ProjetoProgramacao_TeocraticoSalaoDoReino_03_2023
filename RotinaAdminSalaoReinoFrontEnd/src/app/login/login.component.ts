@@ -12,6 +12,9 @@ export class LoginComponent {
         // public route!: Route;
 
         constructor( private router: Router ){}
+        ngOnInit(){
+                // this.entrarNaHome()
+        }
 
         entrarNaHome(){
                 this.router.navigate(['/home'])
