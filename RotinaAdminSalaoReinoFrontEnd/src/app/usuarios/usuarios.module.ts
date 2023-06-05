@@ -12,6 +12,7 @@ import { UsuariosComponent } from './usuarios.component';
   imports: [
     CommonModule,
     UsuariosRoutingModule
-  ]
+  ],
+  exports:[UsuariosComponent]
 })
 export class UsuariosModule { }

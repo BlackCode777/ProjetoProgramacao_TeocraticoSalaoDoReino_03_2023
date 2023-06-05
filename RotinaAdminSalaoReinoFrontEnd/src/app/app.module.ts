@@ -10,6 +10,7 @@ import { faSquare, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
+import { UsuariosRoutingModule } from './usuarios/usuarios-routing.module';
 
 
 @NgModule({
@@ -23,11 +24,8 @@ import { CommonModule } from '@angular/common';
                 AppRoutingModule,                
                 NgbModule,
                 CommonModule,
-                BrowserAnimationsModule
-                
-//     SharedModule,
-//     BrowserAnimationsModule
-
+                BrowserAnimationsModule,
+                UsuariosRoutingModule
         ],
         providers: [], //declara os serviços aqui dentro
         bootstrap: [AppComponent],

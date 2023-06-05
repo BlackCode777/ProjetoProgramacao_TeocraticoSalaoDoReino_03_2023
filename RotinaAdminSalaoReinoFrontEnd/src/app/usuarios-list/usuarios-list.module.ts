@@ -12,6 +12,7 @@ import { UsuariosListComponent } from './usuarios-list.component';
   imports: [
     CommonModule,
     UsuariosListRoutingModule
-  ]
+  ],
+  exports:[UsuariosListComponent]
 })
 export class UsuariosListModule { }

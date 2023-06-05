@@ -7,19 +7,30 @@ import { UsuariosListComponent } from './usuarios-list/usuarios-list.component';
 
 const routes: Routes = [
 
-        { path:'', redirectTo:'login', pathMatch:'full'  },
+        // { path:'', redirectTo:'login', pathMatch:'full'  },
 
-        // {path:'', component:LoginComponent },
+        // {path:'login', component:LoginComponent },
 
-        // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }, 
+        { 
+                path: 'login', 
+                loadChildren: () => import('./login/login.module').then(m => m.LoginModule), 
+                component: LoginComponent 
+        }, 
         { 
                 path: 'home', 
                 loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-                children:[
-                        { path: 'usuarios', loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule) },
-                        { path: 'usuariosList', loadChildren: () => import('./usuarios-list/usuarios-list.module').then(m => m.UsuariosListModule) }
-                ] 
+                component: HomeComponent,               
         },
+        { 
+                path: 'usuarios', 
+                loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule),
+                component: UsuariosComponent 
+        },
+        { 
+                path: 'usuariosList', 
+                loadChildren: () => import('./usuarios-list/usuarios-list.module').then(m => m.UsuariosListModule),
+                component:  UsuariosListComponent
+        }
         
 
         //{  path: 'home', component: HomeComponent  },
