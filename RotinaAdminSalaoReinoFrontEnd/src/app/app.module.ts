@@ -3,29 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeModule } from './home/home.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoginModule } from './login/login.module';
 import { faSquare, faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
-import { UsuariosRoutingModule } from './usuarios/usuarios-routing.module';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
         declarations: [
-                AppComponent
+                AppComponent,
+                HomeComponent
         ],
         imports: [
                 BrowserModule,
-                HomeModule,
                 LoginModule,
                 AppRoutingModule,                
                 NgbModule,
                 CommonModule,
                 BrowserAnimationsModule,
-                UsuariosRoutingModule
         ],
         providers: [], //declara os serviços aqui dentro
         bootstrap: [AppComponent],

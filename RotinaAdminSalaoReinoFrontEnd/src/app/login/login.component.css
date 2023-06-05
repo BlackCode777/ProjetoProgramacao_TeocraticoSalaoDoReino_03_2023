@@ -6,7 +6,7 @@
 .card-login{
         display: flex;
         justify-content: center;
-        padding-top: 10%;
+        padding-top: 2%;
 }
 
 h3, h5, p, button, .button-login {
