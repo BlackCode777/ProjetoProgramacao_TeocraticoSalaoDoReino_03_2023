@@ -12,9 +12,15 @@ const routes: Routes = [
         // {path:'', component:LoginComponent },
 
         // { path: 'login', loadChildren: () => import('./login/login.module').then(m => m.LoginModule) }, 
-        { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
-        { path: 'usuarios', loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule) },
-        { path: 'usuariosList', loadChildren: () => import('./usuarios-list/usuarios-list.module').then(m => m.UsuariosListModule) }
+        { 
+                path: 'home', 
+                loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
+                children:[
+                        { path: 'usuarios', loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule) },
+                        { path: 'usuariosList', loadChildren: () => import('./usuarios-list/usuarios-list.module').then(m => m.UsuariosListModule) }
+                ] 
+        },
+        
 
         //{  path: 'home', component: HomeComponent  },
         //{  path:'usuarios', component: UsuariosComponent  },
