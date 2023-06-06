@@ -15,9 +15,9 @@ const routes: Routes = [
         },        
         { 
                 path: 'home', 
-                component: HomeComponent,               
-        },
-        { 
+                component: HomeComponent,        
+                children:[
+{ 
                 path: 'usuarioCadastro', 
                 loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule),
                 component: UsuarioCadastroComponent 
@@ -27,6 +27,9 @@ const routes: Routes = [
                 loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule),
                 component:  UsuarioListagemComponent
         }
+                ]       
+        },
+        
         
         // { path:'', redirectTo:'login', pathMatch:'full'  },
         // {path:'login', component:LoginComponent },

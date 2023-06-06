@@ -1,20 +1,18 @@
-<html>
 
-        <head>
-        </head>
+<app-home *ngIf="!mostraLogin"></app-home>
 
-        <body>
-               <div>
-                        <app-home></app-home>
-                </div>
-                <div>
-                        <router-outlet></router-outlet>
-                </div>
-        </body>
+<router-outlet *ngIf="!mostraLogin"></router-outlet>
 
-</html>
+<app-login *ngIf="mostraLogin"></app-login>
+
 
 <!--
+
+        Se você estiver controlando manualmente a exibição dos componentes no template, verifique as condições usadas para mostrar 
+        o menu e a página de login. Certifique-se de que apenas um dos componentes esteja sendo exibido de cada vez. 
+        Você pode usar uma variável de controle no componente pai para alternar entre a exibição do menu e da página de login.
+
+        COMO USAR UMA VARIÁVEL DE CONTROLE PARA CONTROLAR A EXIBIÇÃO DA TELA DE LOGIN E O MENU NO ANGULAR ?
         
 <div class="container-fluid">    
         <div class=" container-lg  container-md container-sm"  style="background-color: rgb(127, 161, 255);">

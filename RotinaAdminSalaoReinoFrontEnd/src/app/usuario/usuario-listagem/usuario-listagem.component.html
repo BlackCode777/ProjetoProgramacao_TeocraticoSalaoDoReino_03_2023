@@ -1,92 +1,117 @@
-<!-- nome / email / data de batismo / nome da congr.pertencente / password -->
-<table class="table table-striped">
-        <thead>
-                <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">E-mail</th>
-                        <th scope="col">Data de Batismo</th>
-                        <th scope="col">Congr.pertencente</th>
-                        <th scope="col">Status</th>                        
+<div class="listagem-user-total">
 
-                        <th scope="col">Visualizar</th>
-                        <th scope="col">Editar</th>
-                        <th scope="col">Excluir</th>
+        <!-- nome / email / data de batismo / nome da congr.pertencente / password -->
+        <h3>Listagem de Publicadores do Reino</h3>
+        <hr>
+        <table class="table table-striped">
+                <thead>
+                        <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Data de Batismo</th>
+                                <th scope="col">Congr.pertencente</th>
+                                <th scope="col">Status</th>
 
-                </tr>
-        </thead>
-        <tbody>
-                <tr>
-                        <th scope="row">0</th>
-                        <td>Mark</td>
-                        <td>email@email.com</td>
-                        <td>21/02/2000</td>
-                        <td>Jardim Catarina</td>
-                        <td>ativo</td>
+                                <th scope="col">Visualizar</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Excluir</th>
 
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-eye-fill"></i>
-                                </button>
-                        </td>
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-pencil-fill"></i>
-                                </button>
-                        </td>
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-trash-fill"></i>
-                                </button>
-                        </td>
-                </tr>
-                <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>email@email.com</td>
-                        <td>21/02/2000</td>
-                        <td>Jardim Catarina</td>
-                        <td>ativo</td>
+                        </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                                <th scope="row">0</th>
+                                <td>Mark</td>
+                                <td>email@email.com</td>
+                                <td>21/02/2000</td>
+                                <td>Jardim Catarina</td>
+                                <td>ativo</td>
 
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-eye-fill"></i>
-                                </button>
-                        </td>
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-pencil-fill"></i>
-                                </button>
-                        </td>
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-trash-fill"></i>
-                                </button>
-                        </td>
-                </tr>
-                <tr>
-                        <th scope="row">2</th>
-                        <td>Mark</td>
-                        <td>email@email.com</td>
-                        <td>21/02/2000</td>
-                        <td>Jardim Catarina</td>
-                        <td>inativo</td>
-                        
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-eye-fill"></i>
-                                </button>
-                        </td>
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-pencil-fill"></i>
-                                </button>
-                        </td>
-                        <td>
-                                <button type="button" class="btn btn-primary btn-sm">
-                                        <i class="bi bi-trash-fill"></i>
-                                </button>
-                        </td>
-                </tr>
-        </tbody>
-</table>
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                                <i class="bi bi-eye-fill"></i>
+                                        </button>
+                                </td>
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm" [routerLink]="'/usuarioCadastro'">
+                                                <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                </td>
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <i class="bi bi-trash-fill"></i>
+                                        </button>
+                                </td>
+                        </tr>
+                        <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>email@email.com</td>
+                                <td>21/02/2000</td>
+                                <td>Jardim Catarina</td>
+                                <td>ativo</td>
+
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                                <i class="bi bi-eye-fill"></i>
+                                        </button>
+                                </td>
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                                <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                </td>
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <i class="bi bi-trash-fill"></i>
+                                        </button>
+                                </td>
+                        </tr>
+                        <tr>
+                                <th scope="row">2</th>
+                                <td>Mark</td>
+                                <td>email@email.com</td>
+                                <td>21/02/2000</td>
+                                <td>Jardim Catarina</td>
+                                <td>inativo</td>
+
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                                <i class="bi bi-eye-fill"></i>
+                                        </button>
+                                </td>
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm">
+                                                <i class="bi bi-pencil-fill"></i>
+                                        </button>
+                                </td>
+                                <td>
+                                        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <i class="bi bi-trash-fill"></i>
+                                        </button>
+                                </td>
+                        </tr>
+                </tbody>
+        </table>
+</div>
+
+<!-- MODAL DE EXCLUSÃO -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                                ...
+                        </div>
+                        <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                </div>
+        </div>
+</div>
