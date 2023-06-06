@@ -16,4 +16,9 @@ creating apps:
         ng generate m home --routing
         ng generate c home
 
+        ng generate m usuario --routing
+        ng generate c usuario/usuarioCadastro
+        ng generate c usuario/usuarioListagem
+        
+
         

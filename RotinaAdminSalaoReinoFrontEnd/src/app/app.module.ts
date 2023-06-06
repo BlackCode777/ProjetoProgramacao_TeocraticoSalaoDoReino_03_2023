@@ -10,6 +10,7 @@ import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
+import { UsuarioModule } from './usuario/usuario.module';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { HomeComponent } from './home/home.component';
                 NgbModule,
                 CommonModule,
                 BrowserAnimationsModule,
+                UsuarioModule
         ],
         providers: [], //declara os serviços aqui dentro
         bootstrap: [AppComponent],

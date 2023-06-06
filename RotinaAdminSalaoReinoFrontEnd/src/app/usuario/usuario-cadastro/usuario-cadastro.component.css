@@ -1,0 +1,19 @@
+.cadastro-user-total{
+        /* border: 2px solid rgb(213, 212, 212); */
+        margin-top: 2em;
+        padding: 0 10em 0 10em;
+}
+
+.borda-do-form{
+        border-radius: 10px;
+        padding: 20px;
+        border: 1px solid rgb(213, 212, 212);
+}
+.ajuste-botao-form{
+        margin-top: 1em;
+}
+.cadastro-user-total-botao button{
+        width: 150px;
+        margin-top: 2em;
+       
+}

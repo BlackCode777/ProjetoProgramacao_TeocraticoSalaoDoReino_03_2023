@@ -1,32 +1,32 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { UsuarioCadastroComponent } from './usuario/usuario-cadastro/usuario-cadastro.component';
+import { UsuarioListagemComponent } from './usuario/usuario-listagem/usuario-listagem.component';
 
 const routes: Routes = [        
 
         { path:'', redirectTo:'login', pathMatch:'full'  },
-
         { 
                 path: 'login', 
                 loadChildren: () => import('./login/login.module').then(m => m.LoginModule), 
-                // component: LoginComponent 
-        }, 
-        
+                component: LoginComponent 
+        },        
         { 
                 path: 'home', 
                 component: HomeComponent,               
         },
-
-        // { 
-        //         path: 'usuarios', 
-        //         loadChildren: () => import('./usuarios/usuarios.module').then(m => m.UsuariosModule),
-        //         // component: UsuariosComponent 
-        // },
-        // { 
-        //         path: 'usuariosList', 
-        //         loadChildren: () => import('./usuarios-list/usuarios-list.module').then(m => m.UsuariosListModule),
-        //         // component:  UsuariosListComponent
-        // }
+        { 
+                path: 'usuarioCadastro', 
+                loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule),
+                component: UsuarioCadastroComponent 
+        },
+        { 
+                path: 'usuariosList', 
+                loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule),
+                component:  UsuarioListagemComponent
+        }
         
         // { path:'', redirectTo:'login', pathMatch:'full'  },
         // {path:'login', component:LoginComponent },
