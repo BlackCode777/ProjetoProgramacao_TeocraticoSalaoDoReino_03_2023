@@ -1,11 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
 .card{
-        width: 40%;
+        max-width: 500px;
 }
 .card-login{
-        display: flex;
-        justify-content: center;
+        /* display: flex;
+        justify-content: center; */
         padding-top: 2%;
 }
 
