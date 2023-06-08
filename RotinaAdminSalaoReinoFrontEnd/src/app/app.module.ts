@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { UsuarioModule } from './usuario/usuario.module';
+import { HttpClientModule } from  '@angular/common/http';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { UsuarioModule } from './usuario/usuario.module';
                 NgbModule,
                 CommonModule,
                 BrowserAnimationsModule,
-                UsuarioModule
+                UsuarioModule,
+                HttpClientModule
         ],
         providers: [], //declara os serviços aqui dentro
         bootstrap: [AppComponent],

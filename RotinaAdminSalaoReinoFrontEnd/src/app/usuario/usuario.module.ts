@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { UsuarioRoutingModule } from './usuario-routing.module';
 import { UsuarioCadastroComponent } from './usuario-cadastro/usuario-cadastro.component';
 import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { UsuarioListagemComponent } from './usuario-listagem/usuario-listagem.co
                 UsuarioListagemComponent
         ],
         imports: [
+                HttpClientModule,
                 CommonModule,
                 UsuarioRoutingModule
         ]
