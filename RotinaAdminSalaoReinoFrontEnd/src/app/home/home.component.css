@@ -1,5 +1,11 @@
 @import "bootstrap/dist/css/bootstrap.css";
 
+
+.limitador-do-router-outlet{
+        display: flex;
+        justify-content: center;
+        max-width: 900px;
+}
 .navbar{
         position:static;
         padding: 2em;
@@ -13,6 +19,6 @@
         font-size: xx-large;
 }
 .navbar-nav{
-        
-        margin-left: 15%;
+
+        /* margin-left: 15%; */
 }
