@@ -7,11 +7,14 @@ install:
         npm i bootstrap@5.3.0-alpha3
 
 creating apps:
-
         ng generate module icons
-
         ng generate module home --route home --module app.module
         ng generate module login --route login --module app.module
+
+        ng generate module dashboard
+        ng generate  dashboard --route
+        
+        ng generate c /dashboard/dashboard
 
         ng generate m home --routing
         ng generate c home
