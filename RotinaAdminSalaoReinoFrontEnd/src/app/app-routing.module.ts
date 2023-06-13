@@ -4,10 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { UsuarioCadastroComponent } from './usuario/usuario-cadastro/usuario-cadastro.component';
 import { UsuarioListagemComponent } from './usuario/usuario-listagem/usuario-listagem.component';
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 
 const routes: Routes = [
 
-        { path: '', redirectTo: 'login', pathMatch: 'full' },
+        { path: '', redirectTo: 'home', pathMatch: 'full' },
         {
                 path: 'login',
                 loadChildren: () => import('./login/login.module').then(m => m.LoginModule),
@@ -26,6 +27,11 @@ const routes: Routes = [
                 path: 'usuariosList',
                 loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule),
                 component: UsuarioListagemComponent
+        },
+        {
+                path: 'dashboard',
+                loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
+                component: DashboardComponent
         }
 
 

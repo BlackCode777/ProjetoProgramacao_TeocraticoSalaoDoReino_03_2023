@@ -16,8 +16,8 @@ export class LoginComponent {
                 // this.entrarNaHome()
         }
 
-        entrarNaHome(){
-                this.router.navigate(['/home'])
-        }
+        // entrarNaHome(){
+        //         this.router.navigate(['/home'])
+        // }
 
 }

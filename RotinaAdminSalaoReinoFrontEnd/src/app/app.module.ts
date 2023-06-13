@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { UsuarioModule } from './usuario/usuario.module';
 import { HttpClientModule } from  '@angular/common/http';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpClientModule } from  '@angular/common/http';
                 CommonModule,
                 BrowserAnimationsModule,
                 UsuarioModule,
-                HttpClientModule
+                HttpClientModule,
+                DashboardModule
         ],
         providers: [], //declara os serviços aqui dentro
         bootstrap: [AppComponent],
