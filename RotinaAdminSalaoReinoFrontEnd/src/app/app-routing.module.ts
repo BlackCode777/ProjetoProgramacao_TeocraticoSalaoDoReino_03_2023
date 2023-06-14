@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { UsuarioCadastroComponent } from './usuario/usuario-cadastro/usuario-cadastro.component';
 import { UsuarioListagemComponent } from './usuario/usuario-listagem/usuario-listagem.component';
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import { DesignacaoComponent } from './designacao/designacao/designacao.component';
 
 const routes: Routes = [
 
@@ -32,8 +33,14 @@ const routes: Routes = [
                 path: 'dashboard',
                 loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule),
                 component: DashboardComponent
+        },
+        {
+                path: 'designacao',
+                loadChildren: () => import('./designacao/designacao.module').then(m => m.DesignacaoModule),
+                component: DesignacaoComponent
         }
 
+       
 
         // { path:'', redirectTo:'login', pathMatch:'full'  },
         // {path:'login', component:LoginComponent },

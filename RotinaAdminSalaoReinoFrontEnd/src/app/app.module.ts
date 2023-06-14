@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { UsuarioModule } from './usuario/usuario.module';
 import { HttpClientModule } from  '@angular/common/http';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { DesignacaoModule } from './designacao/designacao.module';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
                 BrowserAnimationsModule,
                 UsuarioModule,
                 HttpClientModule,
-                DashboardModule
+                DashboardModule,
+                DesignacaoModule
         ],
         providers: [], //declara os serviços aqui dentro
         bootstrap: [AppComponent],

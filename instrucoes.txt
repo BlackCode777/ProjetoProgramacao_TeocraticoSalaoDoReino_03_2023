@@ -12,9 +12,12 @@ creating apps:
         ng generate module login --route login --module app.module
 
         ng generate module dashboard
-        ng generate  dashboard --route
-        
+        ng generate dashboard --route        
         ng generate c /dashboard/dashboard
+
+        ng generate module designacao
+        ng generate /designacao --route /designacao --module app.module
+        ng generate c /designacao/designacao
 
         ng generate m home --routing
         ng generate c home

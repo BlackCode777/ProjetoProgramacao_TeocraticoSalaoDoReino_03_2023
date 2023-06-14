@@ -1,7 +1,9 @@
 .cadastro-user-total{
         /* border: 2px solid rgb(213, 212, 212); */
         margin-top: 2em;
-        /* padding: 0 10em 0 10em; */
+        display: flex;
+        justify-content: center;
+        max-width: 1400px;
 }
 
 .borda-do-form{
@@ -14,5 +16,8 @@
 }
 .cadastro-user-total-botao button{
         width: 150px;
-        margin-top: 2em;       
+        margin-top: 1em;     
+}
+hr{
+        margin-top: 2em;  
 }

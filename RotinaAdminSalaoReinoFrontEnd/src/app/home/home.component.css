@@ -4,7 +4,7 @@
 .limitador-do-router-outlet{
         display: flex;
         justify-content: center;
-        max-width: 900px;
+        max-width: 1400px;
 }
 .navbar{
         position:static;
