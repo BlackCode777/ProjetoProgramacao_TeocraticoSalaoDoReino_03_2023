@@ -6,6 +6,9 @@ install:
         npm i bootstrap-dropdown-button
         npm i bootstrap@5.3.0-alpha3
 
+creating interfaces apps:
+        ng generate interface /modules/home/model/TaskList
+
 creating apps:
         ng generate module icons
         ng generate module home --route home --module app.module
